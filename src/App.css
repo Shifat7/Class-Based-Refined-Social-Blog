@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  vertical-align: baseline;
+  
+}
+
+.AppRoot{
+  height: 100vh;
+}
+
+.AppWhole{
+  text-align: center;
+background-color: rgb(46, 46, 46);
+color: rgb(0, 0, 0);
+font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+}
+
+.button{
+background-color: #364175;
+border: none; 
+padding: 5px 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+margin: 4px 2px;
+border-radius: 16px;
+}
+
+.posts{
+  margin: auto;
+  width: 70%;
+  background-color: rgb(143, 143, 143);
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(163, 163, 163);
+}
+
+
+.post{
+  border: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgb(0, 0, 0);
+  margin: 20px;
+  background-color: bisque;
+
+}
+.users{
+
+  margin: auto;
+  width: 70%;
+  background-color: rgb(143, 143, 143);
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(163, 163, 163);
+  min-height: 700px;
+}
+
+.user{
+  
+  border: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgb(0, 0, 0);
+  margin: 50px;
+  background-color: bisque;
+
+}
+
+
+.comments{
+  margin: auto;
+  width: 70%;
+  background-color: rgb(143, 143, 143);
+  border: 1px;
+  border-style: solid;
+
+  border-color: rgb(163, 163, 163);
+}
+
+.comment{
+
+  border: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgb(0, 0, 0);
+  margin: 20px;
+  background-color: bisque;
+
+}
+
+.profiles{
+
+  margin: auto;
+  padding: 3%;
+
+  width: 70%;
+  background-color: rgb(143, 143, 143);
+  border: 1px;
+  border-style: solid;
+  border-color: rgb(163, 163, 163);
+  min-height: 700px;
+}
+
+.profile{
+  display: flex;
+  justify-content: center;
+  padding: 5%;
+  border: 1px;
+  border-style: solid;
+  border-radius: 10px;
+  border-color: rgb(0, 0, 0);
+  margin: 50px;
+  background-color: bisque;
+
+}
+
+.img{
+  border-radius: 50%;
+  width: 5%;
+  height: 5%;
+  float: left;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+.cmnt {
+  margin-top: 20px;
+}
+
+
+
+.postcom{
+
+  border: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  border-color: rgb(255, 0, 0);
+  margin: 20px;
+  background-color: rgb(255, 255, 255);
+
+}
+
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 1rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+  font-size: 22px;
+}
+
+th {
+  background-color: rgb(117, 201, 250);
+}
+
+td {
+  background-color: rgb(205, 235, 253);
+}
+
+form {
+  display: flex;
+  gap: 5px;
+}
+
+form td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+form * {
+  font-size: 10px;
+}
+
+.ID {
+  float: right;
+  justify-content: end;
+  margin-right: 10px;
+}
+
+
+
+.footer{
+
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  padding: 0.5rem;
+  background-color: rgb(34, 34, 34);
+  text-align: center;
+  color: wheat;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+.paginators:visited {
+
+  color: purple;
+
+}
+
+.paginators:hover {
+
+  color: red;
+
+}
+
+.pagination {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  height: 20px;
+}
+
+
+.paginators {
+
+font-size: 20px;
+
+}
+
+
+
+
+.back-to-top {
+  position: fixed;
+  bottom: 40px;
+  right: 75px;
+  font-size: 60px;
+  background: #7f4df5;
+  color: white;
+  cursor:crosshair;
+  border-radius: 50%;
+  border: none;
+  height: 75px;
+  width: 75px;
+
+}
+
+.searchUser {
+
+  float: right;
+  margin-right: 50px;
+  border-radius: 3px;
+  width: 200px;
+}
+
+
+
+.paginationLinks{
+width: 70%;
+height: 40px;
+list-style: none;
+
+display: flex;
+justify-content: center;
+
+margin: auto;
+color: rgb(66, 66, 66);
+}
+
+
+.paginationLinks a {
+padding: 5px;
+margin: 8px;
+color: rgb(66, 66, 66);
+border: 2px solid rgb(66, 66, 66);
+border-radius: 5px;
+cursor: pointer;
+
+}
+
+.paginationActive a {
+color: wheat;
+background-color: thistle;
+
+}
+
+.paginationLinks a:hover {
+  color: wheat;
+  background-color: rgb(167, 148, 167);
+  
+}
+
+
+.Links {
+margin: 10px;
+text-decoration: none;
+color: bisque;
+}
+
+
+.sidebar {
+text-align: center;
+display: flex;
+justify-content: center;
+
+float: left;
+height: 97vh;
+width: 228px;
+background-color: wheat;
+
+}
+
+.ul {
+  margin: 20px;
+  list-style: none;
+  margin-top: 100px;
+  padding: 0;
+}
+
+.li {
+  margin-bottom: 20px;
+}
+
+.Link {
+  text-decoration: none;
+  color:rgb(92, 92, 92);
+}
+
+.author {
+
+  width: 70%;
+  background-color: rgb(143, 143, 143);
+  min-height: 700px;
+
+  display: grid;
+  grid-template-columns: 1fr 50%;
+  align-content: center;
+  overflow: auto;
+  grid-template-rows:max-content;
+
+}
+
+.authors {
+  font-size: 12px;
+  border: 1px;
+  border-style: solid;
+  margin: 30px;
+  background-color: bisque;
+  border: 2px solid rgb(85, 85, 85);
+  height: 200px;
+
+  border-radius: 10px;
+
+}
+
+.right {
+  float: right;
+  border-radius: 5px;
+  margin: 5px;
+}
+
+#pageauthor{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+
+
+}
+
+
+
+.add-post{
+
+  float: right;
+  border-radius: 5px;
+  margin: 5px;
+
+}
+
+
+
+
+.edit{
+  float: right;
+  margin: auto;
+}
+
+.delete {
+  float: right;
+  margin: auto;
+}
